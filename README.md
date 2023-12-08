@@ -10,8 +10,7 @@ All the package
 ```pip install requirements.txt```
 
 
-### Data Collection
-
+### Data
 Most of data science jobs in Canada are posted on two major job board: Glassdoor and Indeed, so the data for this project will be collected from those 2 website.  
 For this project, I collected over ... job posting over Canada in November 2023.  
 
@@ -21,6 +20,20 @@ Since Indeed and Glassdoor don't have API for developer to request the job listi
     
 Having a look at the website interface, we can see that Indeed and Glassdoor are dynamic websites, so I will use Selenium to collect data from these webs. The scraper are in file `indeed_scrape.ipynb` and `glassdoor_scrape.ipynb`  
 
-## Code Structure (Too Long Don't Read)
+## Code Structure 
+
+### Data Collection
+  
+The data is collect using Selenium to collect data from these webs. The scraper are in file `indeed_scrape.ipynb` and `glassdoor_scrape.ipynb`.  
+  
+When you run the `indeed_scrape.ipynb` file, it will run a web driver connect to the indeed webpage. It then find all the job listing objects and iterate through them. Then it clicks each of those job listing, wait for the page to load and copy the Job Title, Company Name, Location, Benefits, Job Type, and Job Description to a dictionary, which then add to a output list. For this project, the scraper will only run for the first 25 page of Indeed.
+
+Fairly silimar approach is used with Glassdoor. 
+  
+The data extracted from these scraper are save in /data folder named `indeed_job.csv` and `glassdoor_job.csv`
+
+### Data Cleaning
+
+
 
 
