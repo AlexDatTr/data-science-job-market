@@ -28,7 +28,7 @@ The data is collect using Selenium to collect data from these webs. The scraper 
   
 When you run the `indeed_scrape.ipynb` file, it will run a web driver connect to the indeed webpage. It then find all the job listing objects and iterate through them. Then it clicks each of those job listing, wait for the page to load and copy the Job Title, Company Name, Location, Benefits, Job Type, and Job Description to a dictionary, which then add to a output list. For this project, the scraper will only run for the first 25 page of Indeed.
 
-Fairly silimar approach is used with Glassdoor, except instead of looping through the pages, the scraper will click on the **Show More** button for 15 times, and for each time it will load 30 job listings, so we expect around 450 job posting from Glassdoor. And we only collect Job Title, Company Name, Location, Job Description. The benefit doesn't have its own object in Glassdoor, so we might later extract the benefits from job description.
+Fairly silimar approach is used with Glassdoor, except instead of looping through the pages, the scraper will click on the `**Show More**` button for 15 times, and for each time it will load 30 job listings, so we expect around 450 job posting from Glassdoor. And we only collect Job Title, Company Name, Location, Job Description. The benefit doesn't have its own object in Glassdoor, so we might later extract the benefits from job description.
 
 The data extracted from these scraper are save in /data folder named `indeed_job.csv` and `glassdoor_job.csv`
 
