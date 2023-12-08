@@ -21,4 +21,4 @@ Since Indeed and Glassdoor don't have API for developer to request the job listi
     
 Having a look at the website interface, we can see that Indeed and Glassdoor are dynamic websites, so I will use Selenium to collect data from these webs. The scraper are in file indeed_scrape.ipynb and glassdoor_scrape.ipynb  
 
-## 
+## Code Structure (Too Long Don't Read)
