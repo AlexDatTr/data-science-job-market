@@ -10,4 +10,7 @@ Getting a job data science job has been my goal and that I've been trying to ach
 
 
 ## Data Source
-Most of data science jobs in Canada are posted on two major job board: Glassdoor and Indeed. Given that, the data for this project is collected by performing web scraping. As there are a lot of Javascript object in the websites and Indeed blocked HLMT request from random user, I Python with Selenium to scrape over 200 job postings from 2 
+
+Most of data science jobs in Canada are posted on two major job board: Glassdoor and Indeed. Given that, the data for this project is collected from Indeed and Glassdoor by performing web scraping. As there are a lot of Javascript object in the websites and Indeed blocked HLMT request from random user, I Python with Selenium to scrape over 200 job postings in November 2023.   
+
+The scraper is in 
