@@ -4,13 +4,21 @@ Getting a job data science job has been my goal and that I've been trying to ach
 
 ## Table of content
 
+## Project Overview
+
 ## Installation
+All the package 
 [How to install packages using pip]([https://www.google.com](https://packaging.python.org/en/latest/tutorials/installing-packages/)https://packaging.python.org/en/latest/tutorials/installing-packages/)  
 ```pip install requirements.txt```
 
 
-## Data Source
+## Data
 
-Most of data science jobs in Canada are posted on two major job board: Glassdoor and Indeed. Given that, the data for this project is collected from Indeed and Glassdoor by performing web scraping. As there are a lot of Javascript object in the websites and Indeed blocked HLMT request from random user, I Python with Selenium to scrape over 200 job postings in November 2023.   
+### Data Source
 
-The web scraper is in file indeed_scrape.ipynb and glassdoor_scrape.ipynb
+Most of data science jobs in Canada are posted on two major job board: Glassdoor and Indeed, so the data for this project will be collected from those 2 website.  
+For this project, I collected over ... job posting over Canada in November 2023. 
+
+### Data Collection
+
+Since Indeed and Glassdoor don't have API for developer to request the job listing on the site, I decide to collect the the data using web scraping. 
