@@ -7,7 +7,7 @@ Getting a job data science job has been my goal and that I've been trying to ach
 ## Installation
 All the package 
 [How to install packages using pip]([https://www.google.com](https://packaging.python.org/en/latest/tutorials/installing-packages/)https://packaging.python.org/en/latest/tutorials/installing-packages/)  
-```pip install requirements.txt```
+  pip install requirements.txt
 
 
 ### Data
