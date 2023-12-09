@@ -18,7 +18,7 @@ Most of data science jobs in Canada are posted on two major job board: Glassdoor
 
 Since Indeed and Glassdoor don't have API for developer to request the job listing on the site, I decide to collect the the data using web scraping.
   
-![Recording 2023-12-08 at 10 21 59](https://github.com/alextr1602/data-science-job-market/assets/134574511/6857efc3-f12a-460d-9b24-ce3be464bc16)
+![Recording 2023-12-08 at 13 17 57](https://github.com/alextr1602/data-science-job-market/assets/134574511/936f23c7-e1a4-444b-bae1-c08f2081c159)
     
 Having a look at the website interface, we can see that Indeed and Glassdoor are dynamic websites, we need to click to job posting for the data to be viewed. I also tried to request HLMT source code from the website but got blocked, so it doesn't look like Beautifulsoup is not gonna be effective for these sites. Therefore, I will use Selenium Web Driver to collect data from these webs. The scraper are in file `indeed_scrape.ipynb` and `glassdoor_scrape.ipynb`  
 
