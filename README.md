@@ -38,7 +38,7 @@ The data extracted from these scraper are save in /data folder named `indeed_job
 
 Even though data clean is performed at different stage of the project, I will still perform some cleaning here to prepare the data for later use. The approach here is to clean data from each job board, transform data to same format and join two table.  
 
-
+For the data from Indeed 
 
 
 
