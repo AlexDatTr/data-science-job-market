@@ -32,7 +32,16 @@ When you run the `indeed_scrape.ipynb` file, it will open a web driver connect t
 
 Fairly silimar approach is used with Glassdoor, except instead of looping through the pages, the scraper will click on the **`Show More`** button for 15 times, and for each time it will load 30 job listings, so we expect around 450 job posting from Glassdoor. And we only collect Job Title, Company Name, Location, Job Description. The benefit doesn't have its own object in Glassdoor, so we might later extract the benefits from job description.
 
-The data extracted from these scraper are save in /data folder named `indeed_job.csv` and `glassdoor_job.csv`
+The data extracted from these scraper are save in /data folder named `indeed_job.csv` and `glassdoor_job.csv`  
+  
+Here is a sample of the scraped data from 2 job boards
+
+![Glassdoor scrape sample](https://github.com/alextr1602/data-science-job-market/assets/134574511/f3100043-f24b-44c7-804d-095c625dc4ee)
+<p align="center" ><em> Glassdoor Scrape Sample </p></em>
+  
+![Indeed scrape sample](https://github.com/alextr1602/data-science-job-market/assets/134574511/c03bd64c-ee70-4e6c-acb2-92a7f46217e6)  
+<p align="center"><em> Indeed Scrape Sample </p></em>
+
 
 ### Data Cleaning
 
