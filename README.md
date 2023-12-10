@@ -42,12 +42,9 @@ Here is a sample of the scraped data from 2 job boards
 ![Indeed scrape sample](https://github.com/alextr1602/data-science-job-market/assets/134574511/c03bd64c-ee70-4e6c-acb2-92a7f46217e6)  
 <p align="center"><em> Indeed Scrape Sample </p></em>
 
-
 ### Data Cleaning
 
 Even though data clean is performed at different stage of the project, I will still perform some cleaning here to prepare the data for later use. The approach here is to clean data from each job board, transform data to same format and join two table.  
 
 For the data from Indeed 
-
-
 
