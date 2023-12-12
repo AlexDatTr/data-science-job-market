@@ -84,4 +84,4 @@ When it come to most popular job title, its is unsurprisingly that **Data Scient
 </p>
 <p align="center"><em> Most Popular Job Titles </p></em>
 
-The job description contain a lot of data in there, so I 
+The job description contain a lot of data in there, so initialli, I cleaned noises from the description. Then perform word contraction, tokenize the description and add Part of Speech tag to each word of the job description. 
