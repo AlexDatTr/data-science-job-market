@@ -48,9 +48,40 @@ Here is a sample of the scraped data from 2 job boards
 
 Even though data clean is performed at different stage of the project, I will still perform some cleaning here to prepare the data for later use. The approach here is to clean data from each job board, transform data to same format and join two table.  
 
-For the data from Indeed. Perform cleaning for by columns as follow:
-- Date: Remove all non digit character, except the dot(e.g "Poted/nPost"). From the age of the post get the date of the post.
-- Location: If the location marks remote and hybrid in it, mark the job as remote and hybrid. Extract the province, city, address if available
-- Pay: Remove all non digit character, except the dot. Get the starting pay and maximum pay,
-- 
+For data from Indeed. Perform cleaning for by columns as follow:
+- Date: Remove all non digit character, except the dot(e.g "Poted/nPost" will be removed). From the age of the post get the date of the post.
+- Location: If the location marks remote and hybrid in it, mark the job as remote and hybrid. Extract the province, city, address if available, otherwise leave the cell NULL
+- Pay: Remove all non digit character, except the dot. Get the starting pay and maximum pay, transform the pay to anual pay and join them to a string to store data
 
+For the data from Glassdoor. Perform cleaning for by columns as follow:
+- Date: Remove all non digit character, except the dot(e.g "h" will be removed). From the age of the post get the date of the post.
+- Location: If the location marks remote and hybrid in it, mark the job as remote and hybrid. Extract the province, city, address if available, otherwise leave the cell NULL
+- Pay: Remove all non digit character, except the dot. Transform the pay to anual pay to join them to a string to store data.  
+
+Join data from 2 job boards. For the purpose of this analysis, I only select the following column for the join table: location, job title, company name, address, city, province, remote, hybrid, pay, job description, benefits, job type. Then duplicate row with same company name, job title, date, will be removed, only keep the first value. Drop row with empty job description.
+
+Detail of the cleaning process if in file `clean_jd.ipynb`
+
+The sample of clean table for further processing.
+
+![Untitled](https://github.com/alextr1602/data-science-job-market/assets/134574511/e1e98049-0f50-4e82-b46f-aa6bc7184946)
+<p align="center"><em> Job Postings Sample </p></em>
+
+### Exploratory Data Analysis
+
+Exploratory Data Analysis(EDA) is necessary to get a general idea of the data set. I perform a univariate analysis on the data and found some intersting information. 
+
+I group the data by location and the result look as expected. The most popular city for data science job is Toronto, follows by Vancouver and Montreal, three big cities in three of the biggest provinces of Canada. However, there are 64 cities in the dataset, and approximately 170 jobs, around 27% of total number of jobs, is from Toronto, which is a suprisingly large number for just one city. 
+<p align="center">
+  <img src="https://github.com/alextr1602/data-science-job-market/assets/134574511/748d55fa-5bcb-42b0-9595-283dde1bd032"/>
+</p>
+<p align="center"><em> Most Popular Cities </p></em>
+
+
+When it come to most popular job title, its is unsurprisingly that **Data Scientist** is the most popular job title. However, even statistics play a significant role in data science, it is still unexpected to see role like **Statistician** as one of the most hired data science roles regarding the size of the dataset is quite small. 
+<p align="center">
+  <img src="https://github.com/alextr1602/data-science-job-market/assets/134574511/d9bc957a-c4d4-4c82-8428-e52e9a3b0b9b"/>
+</p>
+<p align="center"><em> Most Popular Job Titles </p></em>
+
+The job description contain a lot of data in there, so I 
