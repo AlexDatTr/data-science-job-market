@@ -4,7 +4,7 @@ Getting a job data science job has been my goal and that I've been trying to ach
 
 ## Table of content
 
-## Instructions
+## Instruction
 
 ## Installation
 All the package 
