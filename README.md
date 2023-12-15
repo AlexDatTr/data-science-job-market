@@ -84,4 +84,11 @@ When it come to most popular job title, its is unsurprisingly that **Data Scient
 </p>
 <p align="center"><em> Most Popular Job Titles </p></em>
 
-The job description contain a lot of data in there, so initialli, I cleaned noises from the description. Then perform word contraction, tokenize the description and add Part of Speech tag to each word of the job description. 
+The job description contain a lot of data in there, so initialli, I cleaned noises from the description. Then perform word contraction, tokenize the description and add Part of Speech tag to each word of the job description. Then I perform EDA on the POS tag and the job description. Here are some of the chart from the analysis. Complete EDA process can be accessed at file `EDA.ipynb`
+
+<p align="center">
+  <img src="https://github.com/AlexDatTr/data-science-job-market/assets/134574511/82bd9917-c8c9-4b1e-928b-65d5244ca145"/>
+</p>
+
+
+
