@@ -90,5 +90,8 @@ The job description contain a lot of data in there, so initialli, I cleaned nois
   <img src="https://github.com/AlexDatTr/data-science-job-market/assets/134574511/82bd9917-c8c9-4b1e-928b-65d5244ca145"/>
 </p>
 
+### Build Pipeline to Extract Skills from Job Description 
+
+
 
 
