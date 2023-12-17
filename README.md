@@ -94,5 +94,5 @@ The job description contain a lot of data in there, so initialli, noises are cle
 
 From the EDA process, it is recognized that the job description can have different valuable data for analysis. For the purpose of this project, only the skills required for data science jobs are needed to be extract from job descriptions. 
 
-In order to do that, I use method present by [Reme Ajayi](https://medium.com/@Olohireme/job-skills-extraction-from-data-science-job-posts-38fd58b94675) and [Nikita Sharma](https://confusedcoders.com/wp-content/uploads/2019/09/Job-Skills-extraction-with-LSTM-and-Word-Embeddings-Nikita-Sharma.pdf). From viewing the job description, we can see that job skills
+In order to do that, I use method present by [Reme Ajayi](https://medium.com/@Olohireme/job-skills-extraction-from-data-science-job-posts-38fd58b94675) and [Nikita Sharma](https://confusedcoders.com/wp-content/uploads/2019/09/Job-Skills-extraction-with-LSTM-and-Word-Embeddings-Nikita-Sharma.pdf). From viewing the job description, we can see that most phrases described a skill follows certain grammar structure. 
 
