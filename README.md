@@ -96,10 +96,26 @@ From the EDA process, it is recognized that the job description can have differe
 
 In order to do that, I use method present by [Reme Ajayi](https://medium.com/@Olohireme/job-skills-extraction-from-data-science-job-posts-38fd58b94675) and [Nikita Sharma](https://confusedcoders.com/wp-content/uploads/2019/09/Job-Skills-extraction-with-LSTM-and-Word-Embeddings-Nikita-Sharma.pdf). From viewing the job description, we can see that most phrases described a skill follows certain grammar structure. 
 
-1. Noun Phrase: optional determinate, any number of adjectives, a noun, noun plural, proper noun with additionals following 
+1. Noun Phrase: optional determinate, any number of adjectives, a noun, noun plural, proper noun with additionals following noun
 2. Noun Phrase Variance: maybe preposition, any number of adjective or nouns, any plural nouns or singular nouns
 3. Verb Phrase: any Verb followed by any number of Nouns
 4. Noun between Commas:  any number of a singular or plural noun followed by a comma followed by the same noun, noun, noun pattern
+
+So in order to extract the skills from the job description, I will use the following pipeline:
+1. Tokenize the job description
+2. Clean the tokenized job description with lemmatization and remove stop words
+3. Add Part of Speech tag to each word of the job description
+4. Create 4 grammar patterns associate with 4 grammar structure above and extract the phrase that match the pattern
+5. Add the extracted phrase to a list of skills and remove duplicate and export the list to a csv file for label and training purpose.
+
+As a result, I have a list of thousands of noun phrases that are extracted from the job description. The list is then manually label to be used for training a model to extract skills.
+
+Since 
+
+
+
+
+
 
 
 
