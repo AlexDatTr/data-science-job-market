@@ -101,14 +101,14 @@ Using LLaMA, I created a pipeline where the model learns from a small set of ann
 
 Here’s how the pipeline was constructed:
 
-Prepare Few-Shot Examples: I manually annotated a few job descriptions by labeling the specific skills required. These examples were used to guide the model in recognizing similar patterns in other job descriptions.
+- Prepare Few-Shot Examples: I manually annotated a few job descriptions by labeling the specific skills required. These examples were used to guide the model in recognizing similar patterns in other job descriptions.
 
-Create an Input Prompt: I formatted the few-shot examples into a prompt that included both the annotated job descriptions and the job description that needed skill extraction. This prompt was structured to teach the LLaMA model the patterns to look for when identifying skills.
+- Create an Input Prompt: I formatted the few-shot examples into a prompt that included both the annotated job descriptions and the job description that needed skill extraction. This prompt was structured to teach the LLaMA model the patterns to look for when identifying skills.
 
-Tokenize the Input: The input prompt, including the few-shot examples and the target job description, was tokenized using the LLaMA tokenizer.
+- Tokenize the Input: The input prompt, including the few-shot examples and the target job description, was tokenized using the LLaMA tokenizer.
 
-Generate Predictions: The tokenized input was fed into the LLaMA model to generate a continuation of the prompt, where the model predicted the relevant skills for the job description based on the patterns it learned from the examples.
+- Generate Predictions: The tokenized input was fed into the LLaMA model to generate a continuation of the prompt, where the model predicted the relevant skills for the job description based on the patterns it learned from the examples.
 
-Post-process the Output: The generated output was cleaned and validated to remove irrelevant or duplicate entries, ensuring that the list of extracted skills was accurate and usable.
+- Post-process the Output: The generated output was cleaned and validated to remove irrelevant or duplicate entries, ensuring that the list of extracted skills was accurate and usable.
 
 This approach allowed for the flexible and accurate extraction of skills from job descriptions with minimal manual effort, utilizing the powerful few-shot learning capabilities of the LLaMA model. The result was a scalable method to identify required skills across various job postings, ready for further analysis or model training.
